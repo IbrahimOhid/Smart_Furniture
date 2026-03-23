@@ -1,12 +1,19 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Home from './page/Home/Home'
+import ScrollToTop from './utils/ScrollToTop'
 
 const App = () => {
   return (
-    <div>
+    <div className='font-poppins'>
+      <ScrollToTop/>
       <Navbar/>
-      <Outlet/>
+      <main className='min-h-screen'>
+        <Outlet/>
+      </main>
+      <Footer/>
     </div>
   )
 }

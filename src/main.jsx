@@ -8,12 +8,17 @@ import Furniture from "./page/Furniture/Furniture.jsx";
 import Shop from "./page/Shop/Shop.jsx";
 import AboutUs from "./page/AboutUs/AboutUs.jsx";
 import Contact from "./page/Contact/Contact.jsx";
+import Home from "./page/Home/Home.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "/furniture",
         element: <Furniture />,
